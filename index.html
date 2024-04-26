@@ -1,83 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Denton Plant Factory</title>
-<style>
-    /* CSS Styles */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f7f7f7;
-        color: #333;
-    }
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    header {
-        background-color: #78c850;
-        padding: 10px 0;
-        text-align: center;
-    }
-    header h1 {
-        margin: 0;
-        color: #fff;
-    }
-    .product {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        border: 1px solid #ddd;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #fff;
-    }
-    .product img {
-        max-width: 100px;
-        margin-right: 20px;
-    }
-    footer {
-        background-color: #78c850;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denton Plant Factory</title>
+    <style>
+        /* CSS for dark theme */
+        body {
+            background-color: #1f1f1f;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .product {
+            background-color: #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 50px;
+            text-align: center;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], input[type="submit"] {
+            width: 300px;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>Welcome to Denton Plant Factory</h1>
-    <nav>
-        <a href="#about">About</a>
-    </nav>
-</header>
-<div class="container">
-    <h2>Our Products</h2>
-    <div class="product">
-        <img src="plant1.jpg" alt="Plant 1">
-        <div>
-            <h3>Plant 1</h3>
-            <p>Description of plant 1.</p>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h1>Denton Plant Factory</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="product">
+            <img src="plant1.jpg" alt="Plant 1">
+            <h2>Plant Name</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Type: Indoor Plant</p>
+            <p>Origin: Tropical regions</p>
+            <button>Add to Cart</button>
         </div>
-    </div>
-    <div class="product">
-        <img src="plant2.jpg" alt="Plant 2">
-        <div>
-            <h3>Plant 2</h3>
-            <p>Description of plant 2.</p>
+        <div class="product">
+            <img src="plant2.jpg" alt="Plant 2">
+            <h2>Plant Name</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Type: Outdoor Plant</p>
+            <p>Origin: Mediterranean</p>
+            <button>Add to Cart</button>
         </div>
+        <!-- More products go here -->
     </div>
-    <!-- Add more products as needed -->
-</div>
-<footer>
-    <p>&copy; 2024 Denton Plant Factory. All rights reserved.</p>
-</footer>
+    <footer>
+        &copy; 2024 Denton Plant Factory. All Rights Reserved.
+    </footer>
+    <form>
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Full Name" required><br>
+        <input type="tel" placeholder="Contact Number" required><br>
+        <input type="email" placeholder="Email Address" required><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
